@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import GitHubActivity from './components/GitHubActivity';
+import ResearchAchievements from './components/ResearchAchievements';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -14,12 +16,14 @@ function App() {
                 <Navbar />
                 <Hero />
                 <Skills />
-                <Experience />
                 <Projects />
+                <GitHubActivity />
+                <Experience />
+                <ResearchAchievements />
                 <Contact />
 
                 <footer className="bg-white dark:bg-black border-t border-gray-200 dark:border-gray-900 py-8 text-center text-gray-500 text-sm transition-colors duration-300">
-                    <p>© {new Date().getFullYear()} AI Engineer Portfolio. Built with React & Tailwind.</p>
+                    <p>© {new Date().getFullYear()} Aniket Chauhan. All rights reserved.</p>
                 </footer>
             </div>
         </ThemeProvider>

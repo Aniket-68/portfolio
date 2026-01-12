@@ -20,6 +20,8 @@ const Navbar = () => {
         { name: 'Experience', href: '#experience' },
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
+        { name: 'GitHub', href: '#github' },
+        { name: 'Research', href: '#research' },
         { name: 'Contact', href: '#contact' },
     ];
 
@@ -62,7 +64,7 @@ const Navbar = () => {
                         >
                             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                         </button>
-                        <a href="#" className="hidden sm:block text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white transition-colors"><Github size={20} /></a>
+                        <a href="https://github.com/aniket-68" target="_blank" rel="noopener noreferrer" className="hidden sm:block text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white transition-colors"><Github size={20} /></a>
                         <a href="https://www.linkedin.com/in/aniket-chauhan-110b8727" target="_blank" rel="noopener noreferrer" className="hidden sm:block text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white transition-colors"><Linkedin size={20} /></a>
                         <a href="mailto:aniketchauhan0608@gmail.com" className="hidden sm:block text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white transition-colors"><Mail size={20} /></a>
                     </motion.div>
@@ -103,7 +105,7 @@ const Navbar = () => {
                                 </a>
                             ))}
                             <div className="flex space-x-6 pt-4 border-t border-gray-200 dark:border-gray-800">
-                                <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white"><Github size={24} /></a>
+                                <a href="https://github.com/aniket-68" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white"><Github size={24} /></a>
                                 <a href="https://www.linkedin.com/in/aniket-chauhan-110b8727" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white"><Linkedin size={24} /></a>
                                 <a href="mailto:aniketchauhan0608@gmail.com" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-white"><Mail size={24} /></a>
                             </div>

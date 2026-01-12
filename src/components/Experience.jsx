@@ -43,12 +43,12 @@ const Experience = () => {
     const education = [
         {
             degree: "MTech in Artificial Intelligence & Machine Learning",
-            school: "BITS Pilani",
+            school: "Birla Institute of Technology and Science (BITS), Pilani",
             period: "05/2024 - Present"
         },
         {
             degree: "BE in Computer Engineering",
-            school: "SIGCE (Navi Mumbai)",
+            school: "SIGCE -- Mumbai University",
             period: "01/2017 - 06/2021"
         }
     ];
@@ -79,22 +79,22 @@ const Experience = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="relative pl-8 border-l-2 border-gray-800 hover:border-purple-500 transition-colors"
                             >
-                                <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-purple-500 ring-4 ring-black"></span>
+                                <span className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-purple-500 ring-4 ring-gray-50 dark:ring-black"></span>
 
                                 <div className="mb-2 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                                    <h3 className="text-2xl font-bold text-white">{exp.role}</h3>
-                                    <div className="flex items-center text-gray-400 text-sm mt-1 sm:mt-0">
+                                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{exp.role}</h3>
+                                    <div className="flex items-center text-gray-500 dark:text-gray-400 text-sm mt-1 sm:mt-0">
                                         <Calendar size={14} className="mr-2" />
                                         {exp.period}
                                     </div>
                                 </div>
 
-                                <div className="flex items-center text-blue-400 mb-4 font-medium">
+                                <div className="flex items-center text-blue-600 dark:text-blue-400 mb-4 font-medium">
                                     <Briefcase size={16} className="mr-2" />
                                     {exp.company}
                                 </div>
 
-                                <ul className="list-disc list-outside ml-4 space-y-2 text-gray-600 dark:text-gray-400">
+                                <ul className="list-disc list-outside ml-4 space-y-2 text-gray-700 dark:text-gray-400">
                                     {exp.description.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}

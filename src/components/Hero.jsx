@@ -21,13 +21,7 @@ const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="inline-flex items-center space-x-2 bg-blue-900/30 border border-blue-800 rounded-full px-4 py-1.5 mb-6">
-                                <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                                </span>
-                                <span className="text-blue-300 text-sm font-medium">Available for hire</span>
-                            </div>
+
 
                             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                                 AI Engineer <br />
@@ -74,14 +68,14 @@ const Hero = () => {
                             <div className="relative z-20 w-32 h-32 flex items-center justify-center">
                                 <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
                                 <div className="absolute inset-0 border-2 border-blue-500/30 rounded-full border-dashed animate-[spin_10s_linear_infinite]"></div>
-                                <div className="bg-gray-900/90 p-6 rounded-full border border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.3)] backdrop-blur-xl relative z-20">
+                                <div className="bg-gray-900/90 dark:bg-gray-900/90 p-6 rounded-full border border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.3)] backdrop-blur-xl relative z-20">
                                     <Brain size={64} className="text-blue-400 drop-shadow-lg" />
                                 </div>
                             </div>
 
-                            {/* Inner Orbit - AI/Core (Clockwise) */}
+                            {/* Inner Orbit - AI/Core (Clockwise) - Hidden on mobile */}
                             <motion.div
-                                className="absolute inset-0 z-10"
+                                className="hidden md:block absolute inset-0 z-10"
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
                             >
@@ -111,9 +105,9 @@ const Hero = () => {
                                 ))}
                             </motion.div>
 
-                            {/* Outer Orbit - Infra/Backend (Counter-Clockwise) */}
+                            {/* Outer Orbit - Infra/Backend (Counter-Clockwise) - Hidden on mobile */}
                             <motion.div
-                                className="absolute inset-0 z-10"
+                                className="hidden md:block absolute inset-0 z-10"
                                 animate={{ rotate: -360 }}
                                 transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
                             >
