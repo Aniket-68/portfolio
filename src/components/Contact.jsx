@@ -52,7 +52,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Location</p>
-                                        <p className="text-gray-900 dark:text-white font-medium">Navi Mumbai, India</p>
+                                        <p className="text-gray-900 dark:text-white font-medium">Navi Mumbai, Maharashtra, India</p>
                                     </div>
                                 </div>
 

@@ -16,6 +16,7 @@ const Projects = () => {
                 "Context-Aware Orchestration & Fusion"
             ],
             techStack: ["PyTorch", "YOLO", "Qwen3-VLM", "Fusion Engine", "TTS/STT"],
+            image: "/walksense_2.png",
             archImage: "/walksense_architecture.png",
             links: { github: "#", demo: "#" }
         },
@@ -29,6 +30,7 @@ const Projects = () => {
                 "Anti-Spoofing Liveness Check"
             ],
             techStack: ["TensorFlow Lite", "Android SDK", "SQLite", "Python"],
+            image: "/fr_1.png",
             links: { github: "#", demo: "#" }
         },
         {
@@ -41,6 +43,7 @@ const Projects = () => {
                 "Geo-tagged Reports"
             ],
             techStack: ["CV/ML", "FastAPI", "React Native", "PostgreSQL"],
+            image: "/pd_1.png",
             links: { github: "#", demo: "#" }
         }
     ];
@@ -70,8 +73,27 @@ const Projects = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="group relative bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl overflow-hidden hover:border-purple-500/50 transition-all duration-300"
                             >
-                                <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
-                                    <Code size={48} className="text-gray-400 dark:text-gray-700 group-hover:text-purple-500 transition-colors" />
+                                <div className="aspect-[3/2] bg-gray-100 dark:bg-gray-800 relative flex items-center justify-center overflow-hidden">
+                                    {project.image ? (
+                                        <>
+                                            {/* Blurred background fill */}
+                                            <img
+                                                src={project.image}
+                                                alt=""
+                                                className="absolute inset-0 w-full h-full object-cover blur-xl opacity-50 dark:opacity-30 scale-110"
+                                            />
+                                            {/* Sharp fitting foreground */}
+                                            <img
+                                                src={project.image}
+                                                alt={project.title}
+                                                className="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 p-2"
+                                            />
+                                        </>
+                                    ) : (
+                                        <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                                            <Code size={48} className="text-gray-400 dark:text-gray-700 group-hover:text-purple-500 transition-colors" />
+                                        </div>
+                                    )}
                                 </div>
 
                                 <div className="p-8">
