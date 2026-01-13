@@ -18,9 +18,9 @@ const Contact = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16"
                 >
-                    <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
                     <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
                 </motion.div>
 
@@ -33,21 +33,21 @@ const Contact = () => {
                         transition={{ duration: 0.6 }}
                         className="md:w-1/2"
                     >
-                        <div className="h-full bg-white/50 dark:bg-gray-900/50 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm dark:shadow-none flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Info</h3>
+                        <div className="h-full bg-white/50 dark:bg-gray-900/50 p-6 md:p-8 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm dark:shadow-none flex flex-col justify-center">
+                            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Contact Info</h3>
                             <div className="space-y-6">
-                                <div className="flex items-start space-x-4">
-                                    <div className="p-3 bg-blue-100 dark:bg-blue-500/10 rounded-lg text-blue-600 dark:text-blue-400">
+                                <div className="flex items-start space-x-4 min-w-0">
+                                    <div className="p-3 bg-blue-100 dark:bg-blue-500/10 rounded-lg text-blue-600 dark:text-blue-400 shrink-0">
                                         <Mail size={24} />
                                     </div>
-                                    <div>
+                                    <div className="min-w-0 flex-1">
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Email</p>
-                                        <a href="mailto:aniketchauhan0608@gmail.com" className="text-gray-900 dark:text-white font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">aniketchauhan0608@gmail.com</a>
+                                        <a href="mailto:aniketchauhan0608@gmail.com" className="text-gray-900 dark:text-white text-sm md:text-base font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors break-all block">aniketchauhan0608@gmail.com</a>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="p-3 bg-purple-100 dark:bg-purple-500/10 rounded-lg text-purple-600 dark:text-purple-400">
+                                    <div className="p-3 bg-purple-100 dark:bg-purple-500/10 rounded-lg text-purple-600 dark:text-purple-400 shrink-0">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
@@ -57,12 +57,12 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start space-x-4">
-                                    <div className="p-3 bg-pink-100 dark:bg-pink-500/10 rounded-lg text-pink-600 dark:text-pink-400">
+                                    <div className="p-3 bg-pink-100 dark:bg-pink-500/10 rounded-lg text-pink-600 dark:text-pink-400 shrink-0">
                                         <Phone size={24} />
                                     </div>
                                     <div>
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Phone</p>
-                                        <p href="tel:+918169882434" className="text-gray-900 dark:text-white font-medium">+91 8169882434</p>
+                                        <a href="tel:+918169882434" className="text-gray-900 dark:text-white font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">+91 8169882434</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                         transition={{ duration: 0.6 }}
                         className="md:w-1/2"
                     >
-                        <div className="h-full bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform flex flex-col justify-between">
+                        <div className="h-full bg-gradient-to-r from-blue-600 to-purple-600 p-6 md:p-8 rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform flex flex-col justify-between">
                             <div>
                                 <div className="flex items-start justify-between mb-6">
                                     <div>

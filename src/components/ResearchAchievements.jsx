@@ -67,11 +67,11 @@ const ResearchAchievements = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16"
                 >
                     <div className="flex items-center justify-center mb-4">
-                        <Award className="text-gray-900 dark:text-white mr-3" size={40} />
-                        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Research & Achievements</h2>
+                        <Award className="text-gray-900 dark:text-white mr-3 shrink-0" size={32} />
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight">Research & Achievements</h2>
                     </div>
                     <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
                 </motion.div>
@@ -119,7 +119,7 @@ const ResearchAchievements = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 shadow-sm dark:shadow-none"
+                            className="bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all duration-300 shadow-sm dark:shadow-none"
                         >
                             <div className="flex flex-col lg:flex-row gap-6">
                                 {/* Paper Icon */}
@@ -131,13 +131,13 @@ const ResearchAchievements = () => {
 
                                 {/* Paper Details */}
                                 <div className="flex-1">
-                                    <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                                    <h4 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3">
                                         {paper.title}
                                     </h4>
 
-                                    <div className="flex flex-wrap items-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400">
+                                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 text-xs md:text-sm text-gray-600 dark:text-gray-400">
                                         <div className="flex items-center">
-                                            <Users size={16} className="mr-2" />
+                                            <Users size={16} className="mr-2 shrink-0" />
                                             <span>{paper.authors.length} Authors</span>
                                         </div>
                                         <div className="flex items-center">
@@ -165,10 +165,10 @@ const ResearchAchievements = () => {
                                         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                                             <strong>Volume:</strong> {paper.volume} | <strong>ISSN:</strong> {paper.issn}
                                         </p>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mb-2 break-words">
                                             <strong>Authors:</strong> {paper.authors.join(", ")}
                                         </p>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 break-all">
                                             <strong>DOI:</strong> {paper.doi}
                                         </p>
                                     </div>

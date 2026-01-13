@@ -23,14 +23,14 @@ const Hero = () => {
                         >
 
 
-                            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
                                 AI Engineer <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
                                     Applied GenAI & Backend Systems
                                 </span>
                             </h1>
 
-                            <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-lg leading-relaxed">
+                            <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg mb-8 max-w-lg leading-relaxed">
                                 Hands-on experience in Generative AI, LLM fine-tuning, RAG, and Vision-Language systems.
                                 Building scalable, production-ready AI solutions with real-world business impact.
                             </p>

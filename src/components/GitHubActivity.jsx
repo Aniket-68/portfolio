@@ -171,21 +171,21 @@ const GitHubActivity = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 md:mb-16"
                 >
                     <div className="flex items-center justify-center mb-4">
-                        <Github className="text-gray-900 dark:text-white mr-3" size={40} />
-                        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">GitHub Activity {year}</h2>
+                        <Github className="text-gray-900 dark:text-white mr-3 shrink-0" size={32} />
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight">GitHub Activity {year}</h2>
                     </div>
                     <div className="w-20 h-1 bg-purple-500 mx-auto rounded-full mb-6"></div>
-                    <p className="text-xl text-gray-600 dark:text-gray-300">
+                    <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
                         {loading ? 'Loading...' : `${stats.total} contributions in ${year}`}
                     </p>
                 </motion.div>
 
                 {/* Main Content */}
-                <div className="max-w-4xl mx-auto">
-                    <div className="bg-white dark:bg-[#0d1117] rounded-xl border border-gray-200 dark:border-gray-800 p-6 shadow-xl">
+                <div className="max-w-4xl mx-auto min-w-0">
+                    <div className="bg-white dark:bg-[#0d1117] rounded-xl border border-gray-200 dark:border-gray-800 p-4 md:p-6 shadow-xl">
 
                         {/* Stats Header */}
                         {!loading && (
